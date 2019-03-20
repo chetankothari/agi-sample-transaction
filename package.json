@@ -1,0 +1,22 @@
+{
+  "name": "agi-sample-operation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "singularitynet-platform-contracts": "^0.3.0",
+    "singularitynet-token-contracts": "^2.0.1",
+    "web3": "^1.0.0-beta.49"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.4"
+  }
+}
