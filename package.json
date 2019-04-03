@@ -4,17 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "babel index.js --out-file compiled.js",
+    "build-grpc": "babel index.js --out-file compiled.js",
+    "run-grpc": "babel-node channel-state-operations.js",
     "start": "babel-node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bignumber.js": "^8.1.1",
+    "ethereumjs-tx": "^1.3.7",
+    "google-protobuf": "^3.7.1",
+    "grpc": "^1.19.0",
+    "ipfs-http-client": "latest",
     "singularitynet-platform-contracts": "^0.3.0",
     "singularitynet-token-contracts": "^2.0.1",
-    "web3": "^1.0.0-beta.49"
+    "web3": "^1.0.0-beta.51"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.3.4"
